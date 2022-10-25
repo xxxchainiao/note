@@ -1,0 +1,8 @@
+ NioEventLoopGroup 初始化代码分析
+ 
+ public NioEventLoopGroup() {this(0);}
+ 
+   public NioEventLoopGroup(int nThreads) {
+        // 第二个参数是这个group所包含的executor
+        this(nThreads, (Executor) null);
+    }
